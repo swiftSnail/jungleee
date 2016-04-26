@@ -1,0 +1,21 @@
+{
+    "namespace":"outfox.ead.data",
+    "type":"record",
+    "name":"SdkAppInfo",
+    "fields":[
+        {"name":"id","type":"long"},
+        {"name":"developerId","type":"long"},
+        {"name":"name","type":"string","default":""},
+        {"name":"packageName","type":"string","default":""},
+        {"name":"version","type":"string","default":""},
+        {"name":"status","type":"int","default":0},
+        {"name":"osType","type":"int","default":0},
+        {"name":"category","type":"int","default":0},
+        {"name":"createTime","type":"long","default":0},
+        {"name":"modiTime","type":"long","default":0},
+        {"name":"synId","type":"int","default":0},
+        {"name":"decryptionKey","type":"string","default":""},
+        {"name":"IabCategories","type":["null",{"type":"array","items":"int"}],"default":null},
+        {"name":"IabBlockCategories","type":["null",{"type":"array","items":"int"}],"default":null}
+    ]
+}
