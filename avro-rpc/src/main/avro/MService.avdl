@@ -1,0 +1,8 @@
+@namespace("com.swiftsnail.avro.probe.service")
+protocol MService
+{
+    import schema "Person.avsc";
+    import schema "QueryParameter.avsc";
+    string ping();
+    array<com.swiftsnail.avro.probe.model.Person> getPersonList(com.swiftsnail.avro.probe.model.QueryParameter queryParameter);
+}

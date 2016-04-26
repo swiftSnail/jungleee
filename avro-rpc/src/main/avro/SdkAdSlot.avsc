@@ -1,0 +1,10 @@
+{
+        "type":"record",
+        "namespace":"outfox.ead.data",
+        "name":"SdkAdSlot",
+        "doc":"SDK ad slot",
+        "fields":[
+            {"name":"slotId", "type": "string"},
+            {"name":"appId", "type": "string"}
+        ]
+}
